@@ -1,0 +1,46 @@
+    // biblioteca
+    #include <stdio.h>
+   
+    // diretiva (constante fixa)
+    #define NUMERO_DE_TENTATIVAS 5
+    
+    // função principal
+    int main() {
+    printf ("Bem vindo ao nosso jogo de adivinhação!\n");
+    
+    // determinando variáveis
+    int numeroSecreto = 50;
+    int chute;
+    int numeroTentativas = 3;
+    // usando o for para um loop de tentativas
+    for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++){
+   
+    // exibindo a parte de chutes
+    printf ("Tentativa %d de %d\n", i, NUMERO_DE_TENTATIVAS);
+    printf ("Qual é o seu chute?\n");
+    scanf ("%d", &chute);
+    printf ("Seu chute foi %d\n", chute);
+    
+    // variáveis para as condicionais
+    int acertou = (chute == numeroSecreto);
+    int maior = (chute > numeroSecreto);
+    
+    // condicionais
+    if (acertou) {
+        printf (" Parabéns, você acertou! :)\n ");
+    // quebrar o loop depois do acerto
+        break;
+        
+    } else if (maior) {
+        printf (" Eita, você errou :(\n ");
+        printf (" * Seu chute foi maior que o número secreto! *\n"); 
+        
+    } else {
+        printf (" Eita, você errou :(\n ");
+        printf (" * Seu chute foi menor que o número secreto! *\n");
+    } 
+  
+   }
+    printf ("Fim de jogo!");
+    return 0;
+}
