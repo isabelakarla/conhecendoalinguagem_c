@@ -1,0 +1,39 @@
+    // biblioteca
+    #include <stdio.h>
+
+    // função principal
+    int main() {
+    printf ("Bem vindo ao nosso jogo de adivinhação!\n");
+    
+    // determinando variáveis
+    int numeroSecreto = 50;
+    int chute;
+    
+    // usando o for para um loop de tentativas
+    for (int i = 1; i <= 3; i++){
+   
+    // exibindo a parte de chutes
+    printf ("Tentativa %d de 3\n", i);
+    printf ("Qual é o seu chute?\n");
+    scanf ("%d", &chute);
+    printf ("Seu chute foi %d\n", chute);
+    
+    // variáveis para as condicionais
+    int acertou = (chute == numeroSecreto);
+    int maior = (chute > numeroSecreto);
+    
+    // condicionais
+    if (acertou) {
+        printf (" Parabéns, você acertou! :)\n ");
+    } else if (maior) {
+        printf (" Eita, você errou :(\n ");
+        printf (" * Seu chute foi maior que o número secreto! *\n"); 
+    } else {
+        printf (" Eita, você errou :(\n ");
+        printf (" * Seu chute foi menor que o número secreto! *\n");
+    } 
+  
+   }
+   
+    return 0;
+}
