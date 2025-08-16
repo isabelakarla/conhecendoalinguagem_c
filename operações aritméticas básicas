@@ -1,0 +1,25 @@
+// exercícios de fixação // 
+
+#include <stdio.h>
+#define NUM1 15
+#define NUM2 7
+
+int main (){
+    
+    int soma, subtracao, 
+    multiplicacao, divisao, resto;
+    
+    soma = NUM1 + NUM2;
+    subtracao = NUM1 - NUM2;
+    multiplicacao = NUM1 * NUM2;
+    divisao = NUM1 / NUM2;
+    resto = NUM1 % NUM2;
+    
+    printf ("A soma é: %d\n", soma);
+    printf ("A subtração é: %d\n", subtracao);
+    printf ("A multiplicação é: %d\n", multiplicacao);
+    printf ("A divisão é: %d\n", divisao);
+    printf ("O resto da divisão é: %d", resto);
+    
+    return 0;
+}
