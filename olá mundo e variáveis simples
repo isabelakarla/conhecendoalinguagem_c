@@ -1,0 +1,21 @@
+\\ exercício de fixação \\
+
+#include <stdio.h>
+
+int main (){
+    
+    int idade;
+    float altura;
+    
+    printf ("Olá, mundo de programação em C!\n");
+    printf ("Digite sua idade: ");
+    scanf ("%d", &idade);
+    printf ("Digite sua altura: ");
+    scanf ("%f", &altura);
+    
+    printf ("Minha idade é %d\n", idade);
+    printf ("Minha altura é %.2f\n", altura);
+    printf ("Obrigada, usuário! :)");
+    
+    return 0;
+}
