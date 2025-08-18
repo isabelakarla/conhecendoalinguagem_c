@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main (){
+ 
+ int codigo, quantidade;
+ double total;
+ 
+ printf ("Olá, seja bem-vindo ao nosso restaurante! :)\n");
+ printf ("Escolha os seus itens de preferência:\n");
+ printf ("1 - Cachorro Quente - R$ 4.00\n");
+ printf ("2 - X-Salada - R$ 4.50\n");
+ printf ("3 - X-Bacon - R$ 5.00\n");
+ printf ("4 - Torrada simples - R$ 2.00\n");
+ printf ("5 - Refrigerante - R$ 1.50\n");
+ 
+ scanf ("%d %d", &codigo, &quantidade);
+ 
+ if (codigo == 1){
+total = quantidade * 4.00;
+printf ("Total: R$ %.2lf\n", total);
+ } 
+else if (codigo == 2){
+total = quantidade * 4.50;
+printf ("Total: R$ %.2lf\n", total);
+} 
+else if (codigo == 3){
+total = quantidade * 5.00;
+printf ("Total: R$ %.2lf\n", total);
+} 
+else if (codigo == 4){
+total = quantidade * 2.00;
+printf ("Total: R$ %.2lf\n", total);
+} 
+else if (codigo == 5){
+total = quantidade * 1.50;
+printf ("Total: R$ %.2lf\n", total);
+} 
+else {
+    printf ("Código não identificado :(\n");
+    printf ("Tente novamente!");
+}
+
+return 0;
+}
